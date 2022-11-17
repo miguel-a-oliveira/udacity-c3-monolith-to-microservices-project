@@ -1,14 +1,8 @@
 set_env.sh
 set_env.sh
-aws-secret.yaml
-env-configmap.yaml
-env-secret.yaml
 *set_env_default.sh
 node_modules
-configurations/*
-<<<<<<< HEAD
-*aws-secret.yaml
-*env-configmap.yaml
-*env-secret.yaml
-=======
->>>>>>> 56ce370c86a623814efd9c928e85ebf7217c5cfa
+configurations/aws-secret.yaml
+configurations/env-configmap.yaml configurations/env-secret.yaml
+configurations/env-configmap.yaml
+configurations/env-secret.yaml
