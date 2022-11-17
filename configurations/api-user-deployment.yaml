@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-user
+  labels:
+    app: api-user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-user
+  template:
+    metadata:
+      labels:
+        app: api-user
+    spec:
+      containers:
+      - name: api-user
+        image: itsmiguel/udagram-api-user:v0.1
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
