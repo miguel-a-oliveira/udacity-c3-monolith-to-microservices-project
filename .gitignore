@@ -6,6 +6,9 @@ env-secret.yaml
 *set_env_default.sh
 node_modules
 configurations/*
+<<<<<<< HEAD
 *aws-secret.yaml
 *env-configmap.yaml
 *env-secret.yaml
+=======
+>>>>>>> 56ce370c86a623814efd9c928e85ebf7217c5cfa
