@@ -5,3 +5,4 @@ env-configmap.yaml
 env-secret.yaml
 *set_env_default.sh
 node_modules
+configurations/
