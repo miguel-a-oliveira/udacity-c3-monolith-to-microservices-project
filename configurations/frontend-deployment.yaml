@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api-user
-        image: itsmiguel/udagram-frontend:local
+        image: itsmiguel/udagram-frontend:v0.1
         imagePullPolicy: Always
         resources:
           limits:
