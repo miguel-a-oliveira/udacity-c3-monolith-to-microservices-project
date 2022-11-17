@@ -4,4 +4,4 @@ aws-secret.yaml
 env-configmap.yaml
 env-secret.yaml
 *set_env_default.sh
-deployment_script
+node_modules
