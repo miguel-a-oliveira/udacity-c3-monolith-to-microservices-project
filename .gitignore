@@ -7,3 +7,6 @@ configurations/env-configmap.yaml configurations/env-secret.yaml
 configurations/env-configmap.yaml
 configurations/env-secret.yaml
 *node_modules
+www/
+tmp/
+temp/
