@@ -10,3 +10,5 @@ configurations/env-secret.yaml
 www/
 tmp/
 temp/
+*node_modules/
+udagram-api-feed/node_modules/ udagram-api-user/node_modules/ udagram-frontend/node_modules/
