@@ -24,7 +24,7 @@ script:
  - docker tag reverseproxy itsmiguel/reverseproxy:v0.1
  - docker tag udagram-api-feed itsmiguel/udagram-api-feed:v0.1
  - docker tag udagram-api-user itsmiguel/udagram-api-user:v0.1
- - docker tag udagram-frontend itsmiguel/udagram-frontend:v0.1
+ - docker tag udagram-frontend itsmiguel/udagram-frontend:v0.1.1
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you
 after_success:
@@ -32,4 +32,4 @@ after_success:
  - docker push itsmiguel/reverseproxy:v0.1
  - docker push itsmiguel/udagram-api-feed:v0.1
  - docker push itsmiguel/udagram-api-user:v0.1
- - docker push itsmiguel/udagram-frontend:v0.1
+ - docker push itsmiguel/udagram-frontend:v0.1.1

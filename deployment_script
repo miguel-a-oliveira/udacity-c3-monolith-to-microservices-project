@@ -1,7 +1,7 @@
 # Apply env variables and secrets
-kubectl apply -f ./configurations/aws-secret.yaml
-kubectl apply -f ./configurations/env-secret.yaml
-kubectl apply -f ./configurations/env-configmap.yaml
+kubectl apply -f configurations/aws-secret.yaml
+kubectl apply -f configurations/env-secret.yaml
+kubectl apply -f configurations/env-configmap.yaml
 
 # Deployments - Double check the Dockerhub image name and version in the deployment files
 kubectl apply -f configurations/api-feed-deployment.yaml
@@ -25,3 +25,16 @@ kubectl get svc
 kubectl expose deployment frontend --type=LoadBalancer --name=publicfrontend
 
 kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproy
+
+
+#
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.4.5/components.yaml
+
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+kubectl get deployment metrics-server-n kube-system
+
+# Autoscalling
+kubectl autoscale deployment frontend-deployment --cpu-percent=70 --min=3 --max=5
+
+kubectl autoscale deployment api-user --cpu-percent=70 --min=3 --max=5
